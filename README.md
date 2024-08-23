@@ -1,17 +1,17 @@
-## My Project
+## Plan & Execute using Amazon Bedrock
 
-TODO: Fill this README out!
+This sample illustrates how one can use Claude 3.5 and Amazon Bedrock to perform complex agent based tasks that requires orchestration of multiple function calls.
 
-Be sure to:
+This particular examples aims to showcase how an LLM can answer analytical questions based on a dataset.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+# Plan
 
-## Security
+The planning stage is where the LLM is asked to define an execution plan. A plan is a series of function calls with defined parameters that the LLM concludes should be able to answer the question.
+# Execute
+In the execute step the plan is executed with Python code that parses the plan and calls the functions.
+# How to run
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+```
+pip install -r requirements.txt
+python plan_and_execute.py
+```
